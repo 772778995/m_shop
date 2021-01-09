@@ -16,4 +16,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  #app {
+    // 给底部栏占位
+    margin-bottom: 1.2rem;
+  }
 </style>

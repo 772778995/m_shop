@@ -42,16 +42,5 @@ export default {
 <style lang="less" scoped>
   .home {
     position: relative;
-    padding-bottom: 2rem;
-    &.home::after {
-      content: '';
-      display: block;
-      width: 10rem; height: 4.693333rem;
-      background: linear-gradient(0deg,#f23a3a 0%, #f75f30 100%);
-      border-radius: 10% 10% 23% 23% / 0% 0% 9% 9%;
-      position: absolute;
-      top: 0; left: 0;
-      z-index: -1;
-    }
   }
 </style>

@@ -1,9 +1,13 @@
 <template>
   <ul class="tab_bar">
-    <li v-for="(item, index) in tabBarList" :key="index">
-      <div class="txt">{{item.txt}}</div>
-      <div class="icon" :style="item.iconStyle"></div>
-    </li>
+    <router-link
+      v-for="(item, index) in tabBarList"
+      :key="index"
+      class="tab_bar_list"
+      :to="item.path">
+        <div class="txt">{{item.txt}}</div>
+        <div class="icon" :style="item.iconStyle"></div>
+    </router-link>
   </ul>
 </template>
 
@@ -30,7 +34,7 @@ export default {
     width: 100%;
     position: fixed;
     bottom: 0; left: 0;
-    li {
+    .tab_bar_list {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
@@ -47,6 +51,7 @@ export default {
         background-size: contain;
         background-repeat: no-repeat;
       }
+
     }
   }
 </style>
