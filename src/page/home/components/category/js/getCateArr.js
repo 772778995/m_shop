@@ -9,7 +9,7 @@ import icon8 from '@assets/img/home/cate8.png'
 import icon9 from '@assets/img/home/cate9.png'
 import icon10 from '@assets/img/home/cate10.png'
 
-const iconArr = [
+const cateArr = [
   { txt: '超市', title: '超时便利', iconURL: `background: url(${icon1}) 0/100%;` },
   { txt: '秒杀', title: '限时抢购', iconURL: `background: url(${icon2}) 0/100%;` },
   { txt: '包邮', title: '9.9包邮', iconURL: `background: url(${icon3}) 0/100%;` },
@@ -22,4 +22,4 @@ const iconArr = [
   { txt: '签到', title: '签到有礼', iconURL: `background: url(${icon10}) 0/100%;` }
 ]
 
-export { iconArr }
+export { cateArr }

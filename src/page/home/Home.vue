@@ -12,6 +12,8 @@
     <home-headlines/>
     <!-- 周边 -->
     <home-periphery/>
+    <!-- 大家都在抢 -->
+    <home-other/>
   </div>
 </template>
 
@@ -21,7 +23,8 @@ import Recommend from './components/recommend/Recommend'
 import Carousel from './components/carousel/Carousel'
 import Category from './components/category/Category'
 import Headlines from './components/headlines/Headlines'
-import Periphery from './components/periphery/Periphery.vue'
+import Periphery from './components/periphery/Periphery'
+import Other from './components/other/Other'
 export default {
   name: 'Home',
   components: {
@@ -30,7 +33,8 @@ export default {
     'home-carousel': Carousel,
     'home-category': Category,
     'home-headlines': Headlines,
-    'home-periphery': Periphery
+    'home-periphery': Periphery,
+    'home-other': Other
   }
 }
 </script>
@@ -38,6 +42,7 @@ export default {
 <style lang="less" scoped>
   .home {
     position: relative;
+    padding-bottom: 2rem;
     &.home::after {
       content: '';
       display: block;

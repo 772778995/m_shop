@@ -12,27 +12,48 @@
     </div>
     <div class="cont">
       <ul class="cont_left">
-        <li></li>
-        <li></li>
+        <li
+          v-for="(item, index) in leftData"
+          :key="index"
+          class="cont_li_txt">
+            <div class="cont_li_txt_line1" :style="item.icon">{{item.line1}}</div>
+            <div class="cont_li_txt_line2">{{item.line2}}</div>
+            <div class="cont_li_txt_left_img" :style="item.img"></div>
+            <div class="cont_li_txt_buy">立即抢购</div>
+        </li>
       </ul>
       <ul class="cont_right">
-        <li></li>
-        <li></li>
+        <li v-for="(item, index) in rightData" :key="index">
+          <div class="cont_right_left">
+            <div class="cont_right_left_line1" :style="item.icon">{{item.line1}}</div>
+            <div class="cont_right_left_line2">{{item.line2}}</div>
+            <div class="cont_right_left_img"></div>
+            <div class="cont_right_left_buy">立即抢购</div>
+          </div>
+          <div class="cont_right_right" :style="item.img"></div>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import { leftData, rightData } from './js/getData.js'
 export default {
-  name: 'Periphery'
+  name: 'Periphery',
+  data () {
+    return {
+      leftData,
+      rightData
+    }
+  }
 }
 </script>
 
 <style lang="less" scoped>
   .periphery {
     margin: 0.266666rem auto 0 auto;
-    width: 9.466666rem; height: 0.746666rem;
+    width: 9.466666rem;
     line-height: 0.746666rem;
     background: #ffffff;
     white-space: nowrap;
@@ -76,22 +97,77 @@ export default {
       }
     }
     .cont {
-      height: 3.466666rem;
+      height: 4.596266rem;
       background-color: #fff;
       display: flex;
+      border-right: 0.026666rem solid #eee;
+      border-bottom: 0.026666rem solid #eee;
       ul li {
         flex: 1;
-        border: 0.026666rem solid #eee;
-
+        border-left: 0.026666rem solid #eee;
+        border-top: 0.026666rem solid #eee;
+        text-align: center;
+        color: #333;
+        .cont_li_txt_line1 {
+          font-size: 0.373333rem;
+          line-height: 0.373333rem;
+          margin-top: 0.48rem;
+        }
+        .cont_li_txt_line2 {
+          margin-top: 0.16rem;
+          font-size: 0.293333rem;
+          line-height: 0.293333rem;
+        }
+        .cont_li_txt_left_img {
+          height: 1.866666rem;
+        }
+      }
+      .cont_li_txt_buy, .cont_right_left_buy {
+        max-width: 1.4rem;
+        background: #f23a3a;
+        border-radius: 0.16rem;
+        font-size: 0.266666rem;
+        line-height: 0.266666rem;
+        color: #ffffff;
+        margin: 0.346666rem auto 0.213333rem auto;
+        padding: 0.053333rem 0.08rem;
       }
       .cont_left {
         width: 5.333333rem; height: 3.466666rem;
         display: flex;
+        height: 100%;
       }
       .cont_right {
         flex: 1;
         display: flex;
         flex-direction: column;
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 7px 13px;
+          .cont_right_left {
+            width: 1.653333rem;
+            .cont_right_left_line1 {
+              margin: 0.32rem 0 0.133333rem 0;
+              width: 1.653333rem;
+              font-size: 0.293333rem;
+              line-height: 0.373333rem;
+              height: 0.373333rem;
+              color: #333;
+              padding-left: 0.426666rem;
+            }
+            .cont_right_left_line2 {
+              font-size: 0.293333rem;
+              line-height: 0.293333rem;
+              color: #333;
+              margin-bottom: 0.106666rem;
+            }
+          }
+          .cont_right_right {
+            flex: 1;
+          }
+        }
       }
     }
   }

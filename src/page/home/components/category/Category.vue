@@ -2,7 +2,7 @@
   <div class="category">
     <ul class="category_list">
       <li
-        v-for="(item, index) in cateList"
+        v-for="(item, index) in cateArr"
         :key="index"
         class="category_item">
           <div class="category_item_img" :style="item.iconURL">
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import { iconArr } from './js/getIcon'
+import { cateArr } from './js/getCateArr.js'
 export default {
   name: 'Category',
   data () {
     return {
-      cateList: iconArr
+      cateArr
     }
   }
 }
