@@ -36,7 +36,6 @@ export default {
     color: #333333;
     background-color: #fff;
     border-bottom: 0.026666rem solid #eee;
-    border-top: 0.026666rem solid #eee;
   }
   ul {
     display: flex;
