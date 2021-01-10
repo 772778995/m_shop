@@ -6,7 +6,7 @@
       class="tab_bar_list"
       :to="item.path">
         <div class="txt">{{item.txt}}</div>
-        <div class="icon" :style="item.iconStyle"></div>
+        <div class="icon" :style="item.path !== path ? item.iconStyle: item.iconStyle2"></div>
     </router-link>
   </ul>
 </template>
@@ -17,7 +17,16 @@ export default {
   name: 'TabBar',
   data () {
     return {
-      tabBarList
+      tabBarList,
+      path: this.$route.path
+    }
+  },
+  watch: {
+    $route: {
+      handler (val) {
+        this.path = val.path
+      },
+      deep: true
     }
   }
 }

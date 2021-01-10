@@ -53,7 +53,7 @@ export default {
     // 搜索框
     .search {
       padding-left: 0.933333rem;
-      background: url(../../../../assets/img/home/矢量智能对象_5@2x.png) 0.266666rem 0.213333rem/0.453333rem no-repeat #fff;
+      background: url(../../../../assets/img/home/faxian.png) 0.266666rem 0.213333rem/0.453333rem no-repeat #fff;
       height: 0.88rem;
       flex: 1;
       border-radius: 0.453333rem;
