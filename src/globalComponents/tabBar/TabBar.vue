@@ -31,9 +31,11 @@ export default {
     height: 1.2rem;
     background-color: #fff;
     border-top: 0.026666rem solid #eee;
-    width: 100%;
+    width: 10rem;
     position: fixed;
-    bottom: 0; left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
     .tab_bar_list {
       display: flex;
       flex-direction: column-reverse;
@@ -51,7 +53,6 @@ export default {
         background-size: contain;
         background-repeat: no-repeat;
       }
-
     }
   }
 </style>

@@ -8,7 +8,7 @@ const tabBarList = [
   { txt: '首页', iconStyle: `background-image: url(${home});`, path: '/' },
   { txt: '分类', iconStyle: `background-image: url(${cate});`, path: '/category' },
   { txt: '发现', iconStyle: `background-image: url(${find});`, path: '/find' },
-  { txt: '购物车', iconStyle: `background-image: url(${shop});`, path: '/shop' },
+  { txt: '购物车', iconStyle: `background-image: url(${shop});`, path: '/shopcar' },
   { txt: '我的', iconStyle: `background-image: url(${me});`, path: '/me' }
 ]
 
