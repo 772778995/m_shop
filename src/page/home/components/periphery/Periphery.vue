@@ -75,6 +75,7 @@ export default {
     countTime () {
       setInterval(() => {
         this.count--
+        if (this.count <= 0) this.getCount()
         this.getHMS()
       }, 1000)
     }
