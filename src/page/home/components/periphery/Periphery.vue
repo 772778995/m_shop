@@ -3,9 +3,9 @@
     <div class="top">
       <div class="top_find">发现周边</div>
       <div class="top_count">
-        <span class="h">1</span>:
-        <span class="m">34</span>:
-        <span class="s">20</span>
+        <span class="h">{{h}}</span>:
+        <span class="m">{{m}}</span>:
+        <span class="s">{{s}}</span>
       </div>
       <div class="top_nextTime">下场等待开启 | 12:00</div>
       <div class="top_more">更多优惠</div>
@@ -44,8 +44,44 @@ export default {
   data () {
     return {
       leftData,
-      rightData
+      rightData,
+      count: null,
+      h: null,
+      m: null,
+      s: null
     }
+  },
+  methods: {
+    getCount () {
+      const now = new Date()
+      const hours = now.getHours()
+      const today = new Date().toLocaleDateString()
+      const future = new Date(today)
+      let leftHours = 12
+      if (hours >= 12) leftHours += 24
+      future.setTime(future.getTime() + 3600 * 1000 * leftHours)
+      const count = (future - now) / 1000
+      this.count = count
+      this.getHMS()
+    },
+    getHMS () {
+      const h = Math.floor(this.count / 3600)
+      const m = Math.floor(this.count % 3600 / 60)
+      const s = Math.floor(this.count % 3600 % 60)
+      this.h = h
+      this.m = m
+      this.s = s
+    },
+    countTime () {
+      setInterval(() => {
+        this.count--
+        this.getHMS()
+      }, 1000)
+    }
+  },
+  mounted () {
+    this.getCount()
+    this.countTime()
   }
 }
 </script>
