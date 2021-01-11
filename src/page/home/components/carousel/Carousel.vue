@@ -18,6 +18,7 @@ export default {
     top: 2.433333rem; left: 0.4rem;
     border-radius: 0.293333rem;
     width: 9.2rem; height: 2.426666rem;
+	// 溢出
     overflow: hidden;
     .carousel_ul {
       width: 700%; height: 100%;
