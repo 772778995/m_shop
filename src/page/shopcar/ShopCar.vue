@@ -12,6 +12,7 @@ import ShopcarShop from './components/shop/Shop.vue'
 import ShopcarMoney from './components/money/Money.vue'
 export default {
   name: 'ShopCar',
+  // 很好
   components: {
     'shopcar-number': ShopcarNumber,
     'shopcar-shop': ShopcarShop,
