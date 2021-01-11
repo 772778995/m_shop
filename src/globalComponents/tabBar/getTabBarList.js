@@ -1,3 +1,4 @@
+// 图片路径
 import icon1 from '@assets/img/tabBar/home.png'
 import icon2 from '@assets/img/tabBar/category.png'
 import icon3 from '@assets/img/tabBar/find.png'
