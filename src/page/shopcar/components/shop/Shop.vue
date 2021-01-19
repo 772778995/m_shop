@@ -30,6 +30,7 @@
 <script>
 import shopList from './js/shoplist.js'
 export default {
+  name: 'Shop',
   data () {
     return {
       shopList

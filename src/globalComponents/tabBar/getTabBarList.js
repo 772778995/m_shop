@@ -10,10 +10,10 @@ import active4 from '@assets/img/tabBar/shopping2.png'
 import active5 from '@assets/img/tabBar/me2.png'
 const tabBarList = [
   { txt: '首页', iconStyle: `background-image: url(${icon1});`, iconStyle2: `background-image: url(${active1});`, path: '/' },
-  { txt: '分类', iconStyle: `background-image: url(${icon2});`, iconStyle2: `background-image: url(${active2});`, path: '/category' },
-  { txt: '发现', iconStyle: `background-image: url(${icon3});`, iconStyle2: `background-image: url(${active3});`, path: '/find' },
+  { txt: '分类', iconStyle: `background-image: url(${icon2});`, iconStyle2: `background-image: url(${active2});`, path: '/class' },
+  { txt: '发现', iconStyle: `background-image: url(${icon3});`, iconStyle2: `background-image: url(${active3});`, path: '/category' },
   { txt: '购物车', iconStyle: `background-image: url(${icon4});`, iconStyle2: `background-image: url(${active4});`, path: '/shopcar' },
-  { txt: '我的', iconStyle: `background-image: url(${icon5});`, iconStyle2: `background-image: url(${active5});`, path: '/me' }
+  { txt: '我的', iconStyle: `background-image: url(${icon5});`, iconStyle2: `background-image: url(${active5});`, path: '/user' }
 ]
 
 export { tabBarList }

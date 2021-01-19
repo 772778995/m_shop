@@ -1,8 +1,8 @@
 <template>
   <div class="shopcar">
-    <shopcar-number></shopcar-number>
-    <shopcar-shop></shopcar-shop>
-    <shopcar-money></shopcar-money>
+    <shopcar-number/>
+    <shopcar-shop/>
+    <shopcar-money/>
   </div>
 </template>
 
@@ -23,6 +23,6 @@ export default {
 <style lang="less">
   .shopcar{
     position: relative;
-    margin-bottom: 1.599999rem;;
+    margin-bottom: 1.599999rem;
   }
 </style>

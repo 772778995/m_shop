@@ -9,6 +9,9 @@
 </template>
 
 <script>
+export default {
+  name: 'Number'
+}
 </script>
 
 <style lang="less" scoped>

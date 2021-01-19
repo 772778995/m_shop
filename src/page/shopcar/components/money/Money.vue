@@ -8,6 +8,9 @@
 </template>
 
 <script>
+export default {
+  name: 'Money'
+}
 </script>
 
 <style lang="less" scoped>

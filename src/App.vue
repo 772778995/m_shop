@@ -11,9 +11,8 @@
 import TabBar from './globalComponents/tabBar/TabBar'
 export default {
   name: 'App',
-  // 注册组件
   components: {
-    'app-tabbar': TabBar,
+    'app-tabbar': TabBar
   }
 }
 </script>
