@@ -2,6 +2,7 @@
   <div>
     <div class="shopcar_data" v-for="(item, index ) in shopList" :key="index">
       <div class="shopcar_data_title">
+        <!-- 选中时小图标 -->
         <div class="circular"></div>
         <div class="shop">
           {{item.shop}}
