@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// 路由懒加载
+// 路由懒加载模式
 const Home = () => import(/* webpackChunkName: "home" */ '@/page/home/Home')
 const Category = () => import(/* webpackChunkName: "category" */ '@/page/category/Category')
 const ShopCar = () => import(/* webpackChunkName: "shopCar" */ '@/page/shopcar/ShopCar')
