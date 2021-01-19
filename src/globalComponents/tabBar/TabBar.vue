@@ -1,4 +1,5 @@
 <template>
+  <!-- 底部栏 -->
   <ul class="tab_bar">
     <router-link
       v-for="(item, index) in tabBarList"
